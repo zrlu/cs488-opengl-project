@@ -1,0 +1,33 @@
+# Assignment 5
+
+## Compilation
+
+The compilation steps remain the same as the original steps.
+
+In `A5` directory:
+
+```
+$ premake4 gmake
+$ make
+```
+
+## Testing
+
+The program has been tested on gl14 machine.
+
+```
+./A5 abandonedVillage.lua
+```
+
+## Objectives
+
+1. Modeling.
+2. UI.
+3. Texture Mapping.
+4. Bump Mapping.
+5. Perlin Noise.
+6. Lens Flare.
+7. Particle system.
+8. Shadow using shadow mapping.
+9. Transparency using alpha channel.
+10. Reflection Map (Skybox).
