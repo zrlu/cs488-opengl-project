@@ -1,9 +1,4 @@
-Title         : An OpenGL Rendering of Outside Scene
-Author        : Ze Ran Lu
-Logo          : False
-
-[TITLE]
-
+# CS488 OpenGL Project
 # Compilation and Running
 
 The compilation steps remain the same as the original steps.
