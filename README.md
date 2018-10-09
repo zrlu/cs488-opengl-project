@@ -1,5 +1,6 @@
 # CS488 OpenGL Project
-# Compilation and Running
+
+## Compilation and Running
 
 The compilation steps remain the same as the original steps.
 
@@ -19,7 +20,7 @@ To run the program:
 ./A5 abandonedVillage.lua
 ```
 
-# Input File Format
+## Input File Format
 
 The file `scene_lua.cpp` from A3 has been modified to support textures and lightning.
 
@@ -65,19 +66,19 @@ Otherwise, the lua methods are the same as in A3.
 
 The file must contain a ground mesh named `ground` and the first light must be a parallel light. Only a maximum of 4 light sources are supported due to limitation of GLSL.
 
-## Mesh Objects
+### Mesh Objects
 
 The program will automatically find `.obj` files under `Assets/Objects`. Note that the mesh file must have the same object name `o <object_name>` as the first argument of `gr.mesh`.
 
 The mesh object is exported from Blender. The options "Triangularize" and "Export UV" must be enabled.
 
-## Textures
+### Textures
 
 All the texture files must be 8-bit RGBA PNG files.
 
 The `Texture object` supports 5 types of texture files: color (COL), normal (NRM), displacement (DISP), specular (SPEC) and ambient occlusion (OCC). Note that each of these may not be required, since it is not always possible to find complete set of textures. The texture files does not need to have the same size (for example we prefer larger resolution for displacement mapping), but they must have the same UV coordinates and must be square and have dimensions of power of 2.
 
-# Interactions
+## Interactions
 
 The top menubar has different options to toggle visual effects and for debugging:
 
@@ -103,7 +104,7 @@ If the "Free Mode" is on, the user can use WASD keys and mouse to move. Hold Shi
 
 The panel has options to control the position of the sun, different parameters for the ground and for the particle system.
 
-# Implementation
+## Implementation
 
 The project has been only tested in Ubuntu 16.04 LTS environment. The project has only used the original C++ dependencies like other CS 488 assignments.
 
@@ -131,15 +132,15 @@ Due to limitation of time and technical difficulties, there are several bugs and
 
 5. The reflection map currently only reflects the skybox texture. In order to reflect other objects in the scene in realtime, an environment map must be created in real time by rendering the scene to another framebuffer.
 
-# Code Structure
+## Code Structure
 The project was based on the Assignment 3 code. The important part is that in the `draw()` function, the functions `renderShadowMap()`, `renderSceneGraph()`, `renderSkybox()`, `renderParticles()`, `renderSun()`, `renderLensFlare()` are called in order. Cubemaps, shadowmaps, textures, light sources are initialized in the `init()` function.
 
-# References
+## References
 Shreiner, Dave. <i>OpenGL programming guide : the official guide to learning OpenGL, version 2.</i> Upper Saddle River, NJ: Addison-Wesley, 2006. Print.
 
 Vlachos, Alex. <i>Curved PN Triangles.</i> University Of Florida, 2018, https://alex.vlachos.com/graphics/CurvedPNTriangles.pdf. Accessed 6 July 2018.
 
-# Acknowledgements
+## Acknowledgements
 
 I want to thank our course TA Mark Iwanchyshyn for helping me cleaning the bugs in my code.
 
