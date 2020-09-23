@@ -1,5 +1,7 @@
 # CS488 OpenGL Project
 
+![Demo](A5/screenshot.png)
+
 ## Compilation and Running
 
 The compilation steps remain the same as the original steps.
